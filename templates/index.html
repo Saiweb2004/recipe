@@ -1,0 +1,249 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}EpiRecipes Search Platform{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'styles/recipe.css' %}">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">EpiRecipes Search Platform</div>
+            <div class="nav-items">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                <i class="fas fa-bell"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 1st Page -->
+    <div class="front-page">
+        <div class="front-pics1">
+            <div class="pic1">
+                <img src="{% static 'images/front1.jpg' %}" alt="">
+            </div>
+            <div class="pic2">
+                <img src="{% static 'images/front9.jpg' %}" alt="">
+                <div class="main-heading">
+                    <h2>Explore&nbsp;Exciting <br> &nbsp;&nbsp;Recipes&nbsp;Here</h2>
+                </div>
+            </div>
+            <div class="pic3">
+                <img src="{% static 'images/front8.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="sub-heading">
+            Discover your next favorite dish with our Recipe Search <br> Platform. Explore, filter, and find delicious recipes tailored to <br> your taste and cooking preferences. <br>
+            <button class="explore" type="submit">Explore More</button>
+        </div>
+
+        <div class="front-pics2">
+            <div class="pic4">
+                <img src="{% static 'images/front11.jpg' %}" alt="">
+            </div>
+            <div class="pic5">
+                <img src="{% static 'images/front2.jpg' %}" alt="">
+            </div>
+            <div class="pic6">
+                <img src="{% static 'images/front10.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- 2nd Page -->
+    <div class="main-slider">
+        <div class="marquee">
+            <div class="marquee-content">
+
+                    <div class="marquee-item">
+                        <img src="{% static 'images/img1.jpg' %}" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="{% static 'images/img2.jpg' %}" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="{% static 'images/img3.jpg' %}" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="{% static 'images/img4.jpg' %}" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="{% static 'images/img5.jpg' %}" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="{% static 'images/img6.jpg' %}" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="{% static 'images/img7.jpg' %}" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="{% static 'images/img8.jpg' %}" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="{% static 'images/img9.jpg' %}" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="{% static 'images/img10.jpg' %}" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="{% static 'images/img11.jpg' %}" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="{% static 'images/img12.jpg' %}" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="{% static 'images/img13.jpg' %}" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="{% static 'images/img14.jpg' %}" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="{% static 'images/img15.jpg' %}" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="{% static 'images/img1.jpg' %}" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="{% static 'images/img2.jpg' %}" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="{% static 'images/img3.jpg' %}" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="{% static 'images/img4.jpg' %}" alt="">
+                    </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="page2">
+        <main>
+            <section>
+                <div class="recipe-container">
+                    <h3>Discover Delicious Recipes Here</h3>
+                </div>
+            </section>
+            <div class="center">
+                <div class="dropdown">
+                    <div class="title">Filter Results</div>
+                    <div class="input-box"></div>
+                    <div class="list">
+                        <div class="search-box">
+                            <input type="search" name="" id="search" placeholder="Search Options" onkeyup="search(this)">
+                        </div>
+                        <input type="radio" name="drop1" id="id11" class="radio">
+                        <label for="id11">
+                            <span class="material-icons-outlined"> Quick </span>
+                            <span class="name">Quick</span>
+                        </label>
+
+                        <input type="radio" name="drop1" id="id12" class="radio">
+                        <label for="id12">
+                            <span class="material-icons-outlined"> calories </span>
+                            <span class="name">calories</span>
+                        </label>
+
+                        <input type="radio" name="drop1" id="id13" class="radio">
+                        <label for="id13">
+                            <span class="material-icons-outlined"> protein </span>
+                            <span class="name">protein</span>
+                        </label>
+
+                        <input type="radio" name="drop1" id="id14" class="radio">
+                        <label for="id14">
+                            <span class="material-icons-outlined"> 22-minute meals </span>
+                            <span class="name">22-minute meals</span>
+                        </label>
+
+                        <input type="radio" name="drop1" id="id15" class="radio">
+                        <label for="id15">
+                            <span class="material-icons-outlined"> 3-ingredient recipes </span>
+                            <span class="name">3-ingredient recipes</span>
+                        </label>
+
+                        <input type="radio" name="drop1" id="id16" class="radio">
+                        <label for="id16">
+                            <span class="material-icons-outlined"> apricot </span>
+                            <span class="name">apricot</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="search">
+                    <form method="GET">
+                        <input type="text" placeholder="Search for recipes" name="q" class="searchBox">
+                    </form>
+                </div>
+            </div>
+            <section>
+                <body>
+                  <section>
+                  <div class="container">
+                  <div class="search-result">
+                  <div class="item">
+                  <img src="{% static 'images/img2.jpg' %}" alt="" style="object-fit: cover;">
+                  <div class="flex-container">
+                  <h1 class="title">Weekday Chicken Cacciatore</h1>
+                  <a href="#">View Recipe</a>
+                  </div>
+                  <p class="item-data">Calories: 142</p>
+                  </div>
+                  <div class="item">
+                    <img src="{% static 'images/img4.jpg' %}" alt="" style="object-fit: cover;">
+                  <div class="flex-container">
+                  <h1 class="title">Pav bhaji</h1>
+                  <a href="#">View Recipe</a>
+                  </div>
+                  <p class="item-data">Calories: 400</p>
+                  </div>
+                  <div class="item">
+                    <img src="{% static 'images/img6.jpg' %}" alt="" style="object-fit: cover;">
+                  <div class="flex-container">
+                  <h1 class="title">Chicken Drumstick</h1>
+                  <a href="#">View Recipe</a>
+                  </div>
+                  <p class="item-data">Calories: 149</p>
+                  </div>
+                  <div class="item">
+                    <img src="{% static 'images/img8.jpg' %}" alt="" style="object-fit: cover;">
+                  <div class="flex-container">
+                  <h1 class="title">Paneer Butter Masala</h1>
+                  <a href="#">View Recipe</a>
+                  </div>
+                  <p class="item-data">Calories: 320</p>
+                  </div>
+                  <div class="item">
+                    <img src="{% static 'images/img10.jpg' %}" alt="" style="object-fit: cover;">
+                  <div class="flex-container">
+                  <h1 class="title">Cold Coffee</h1>
+                  <a href="#">View Recipe</a>
+                  </div>
+                  <p class="item-data">Calories: 0</p>
+                  </div>
+                  <div class="item">
+                    <img src="{% static 'images/img12.jpg' %}" alt="" style="object-fit: cover;">
+                  <div class="flex-container">
+                  <h1 class="title">brownie batter mudslide</h1>
+                  <a href="#">View Recipe</a>
+                </div>
+                <p class="item-data">Calories: 220</p>
+                </div>
+              </section>
+        </main>
+    </div>
+
+    <footer class="last-nav">
+        EpiRecipes Search Platform
+    </footer>
+</body>
+
+<script src="{% static 'js/recipe.js' %}"></script>
+</html>
